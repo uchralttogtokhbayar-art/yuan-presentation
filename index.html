@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Их Юань гүрэн</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<div id="deck" aria-roledescription="presentation">
+
+  <svg id="world" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#b23a2e" fill-opacity=".10"/><line x1="0" y1="0" x2="0" y2="7" stroke="#d0563f" stroke-width="1.6" stroke-opacity=".55"/></pattern>
+      <pattern id="hatchParch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="7" height="7" fill="#ece4d3" fill-opacity=".05"/><line x1="0" y1="0" x2="0" y2="7" stroke="#b7ad9a" stroke-width="1.4" stroke-opacity=".5"/></pattern>
+      <radialGradient id="glow"><stop offset="0" stop-color="#d0563f" stop-opacity=".55"/><stop offset="1" stop-color="#d0563f" stop-opacity="0"/></radialGradient>
+    </defs>
+    <g id="gGrat"></g>
+    <path id="land" class="land"></path>
+    <g id="gTerr"></g>
+    <g id="gRiv"></g>
+    <g id="gRoutes"></g>
+    <g id="gFx"></g>
+    <g id="gCities"></g>
+  </svg>
+  <div id="mapveil"></div>
+  <div id="vignette"></div>
+  <div id="grain"></div>
+
+  <!-- 01 TITLE -->
+  <section class="slide" id="s01" data-title="Гарчиг">
+    <div class="abs eyebrow t-course">Монголын түүх · I курс · ШУТИС</div>
+    <div class="abs eyebrow t-sup">Монгол угсааны хаант улс</div>
+    <h1 class="abs display t-main split">ИХ ЮАНЬ</h1>
+    <div class="abs display t-main2 split">ГҮРЭН</div>
+    <div class="abs mono t-years">1271 — 1368</div>
+    <div class="abs zh t-zh">大元</div>
+    <div class="abs mn t-mn">ᠶᠡᠬᠡ ᠮᠣᠩᠭᠣᠯ ᠤᠯᠤᠰ</div>
+    <div class="abs tag t-hint">→ / Space — урагш &nbsp;·&nbsp; N — тэмдэглэл &nbsp;·&nbsp; S — эх сурвалж</div>
+    <aside class="notes">Энэ хичээлээр бид Их Юань гүрнийг Монголын эзэнт гүрний нэг хөгжлийн шат болгон авч үзнэ. Гарчигт гурван хэлбэр бичигдсэн байгааг анхаар: кирилл «Их Юань», хятад 大元, монгол бичгээр «Их Монгол Улс». Энэ гурав нь нэг төрийн өөр өөр нэр, өөр өөр үзэгчдэд зориулсан нэршил байсан. 1271 он бол улсын нэрийг зарласан он, 1368 он бол Хятад дахь засаглал дууссан он. Гэхдээ хичээлийн төгсгөлд 1368 он «Монголын төрийн төгсгөл» биш болохыг харуулна. Асуулт: Юанийг «Хятадын гүрэн» гэх үү, «Монголын гүрэн» гэх үү? Энэ асуултын хариуг хичээлийн турш хамт бодно.</aside>
+  </section>
+
+  <!-- 02 MONGOL WORLD -->
+  <section class="slide" id="s02" data-title="Монголын ертөнц">
+    <div class="abs stages">
+      <span class="stage" data-st="0">1206 · Чингис хаан</span>
+      <span class="stage" data-st="1">1227 · Чингис хааны таалал</span>
+      <span class="stage" data-st="2">1259 · Мөнх хааны таалал</span>
+    </div>
+    <div class="abs display yr mono-num" id="s02yr">1206</div>
+    <p class="abs lead yr-cap">Хагас зуунд тал нутгийн нэг улс Евразийн хамгийн том газар нутгийг хамарсан гүрэн болов.</p>
+    <div class="abs area">
+      <div class="n"><span id="s02area">0</span> <span style="font-size:48px">сая км²</span></div>
+      <p class="cap">Их Монгол Улсын дээд хэмжээ, Таагепера (1997)-гийн ойролцоо тооцоо. Эх сурвалжууд өөр өөр тоо өгдөг.</p>
+    </div>
+    <p class="abs cap mapsrc" style="left:auto;right:120px;width:620px;text-align:right">Бүдүүвч зураг. Хил хязгаар ойролцоо; эрэг: Natural Earth.</p>
+    <aside class="notes">Их Монгол Улс (Yeke Mongγol Ulus) 1206 онд Чингис хааныг өргөмжилсөн хуралдайгаар байгуулагдсан. 1227 он гэхэд Монголчууд Тангуд улсыг мөхөөж, Хойд Хятадын нэлээд хэсэг, Төв Азийн Хорезмыг эзэлсэн байв. Өгөдэй (1229–1241), Гүюг (1246–1248), Мөнх (1251–1259) хаадын үед Алтан улс (Зүрчид, 1234), Оросын ноёд, Иран, Багдад (1258) хүртэл тэлсэн. Анхаар: газрын зураг дээрх хил нь ойролцоо. Нүүдэлчдийн төрт ёсонд «хил» гэдэг нь орчин үеийн шугам биш, захиргаа, алба гувчуурын бүс байв. 24 сая км² гэдэг нь Таагепера-гийн тооцоо бөгөөд бусад эрдэмтэд өөр тоо гаргадаг.</aside>
+  </section>
+
+  <!-- 03 SUCCESSION -->
+  <section class="slide" id="s03" data-title="Залгамжлалын хямрал">
+    <div class="abs eyebrow" style="left:120px;top:110px">1259 — 1260</div>
+    <h2 class="abs h2" style="top:160px">Нэг хаан нас барж, <i>хоёр хуралдай</i> хуралдав</h2>
+    <p class="abs lead">Мөнх хаан Сүнийг дайлах аяны үеэр Сычуаньд нас барав. Тулуйн хөвгүүд Хубилай, Аригбөх хоёр тус тусдаа хаан өргөмжлөгдөж, эзэнт гүрний нэгдмэл байдал бодитоор задрав.</p>
+    <svg class="tree" viewBox="0 0 1040 820" aria-label="Мөнх хааны дараах залгамжлалын бүдүүвч">
+      <g id="treeEdges">
+        <path class="edge e-k" d="M420,400 C560,400 640,240 780,240"/>
+        <path class="edge e-a" d="M420,400 C560,400 640,560 780,560"/>
+        <path class="edge e-x e-gh" d="M420,400 C320,400 260,150 140,150"/>
+        <path class="edge e-x e-ch" d="M420,400 C300,400 200,420 80,420"/>
+        <path class="edge e-x e-il" d="M420,400 C320,400 260,680 140,690"/>
+        <path class="edge red e-vs" d="M780,262 L780,538" stroke-dasharray="6 8"/>
+      </g>
+      <g class="tn tn-m"><circle class="n0" cx="420" cy="400" r="20"/><text class="big" x="420" y="470" text-anchor="middle">Мөнх хаан</text><text class="sm" x="420" y="502" text-anchor="middle">† 1259 · Дяоюй цайз, Сычуань</text></g>
+      <g class="tn tn-k"><circle class="nr" cx="780" cy="240" r="16"/><text class="big" x="812" y="236">Хубилай</text><text class="sm" x="812" y="268">Кайпин · 1260</text></g>
+      <g class="tn tn-a"><circle class="np" cx="780" cy="560" r="16"/><text class="big" x="812" y="556">Аригбөх</text><text class="sm" x="812" y="588">Хархорум орчим · 1260</text></g>
+      <g class="tn tn-x"><circle class="np" cx="140" cy="150" r="9"/><text class="mono" x="140" y="118" text-anchor="middle">ЗҮЧИЙН УЛС</text><text class="sm" x="140" y="190" text-anchor="middle">Алтан Орд · Бэрх</text></g>
+      <g class="tn tn-x"><circle class="np" cx="80" cy="420" r="9"/><text class="mono" x="80" y="388" text-anchor="middle">ЦАГААДАЙН УЛС</text><text class="sm" x="80" y="460" text-anchor="middle">Алгу</text></g>
+      <g class="tn tn-x"><circle class="np" cx="140" cy="690" r="9"/><text class="mono" x="140" y="658" text-anchor="middle">ХҮЛЭГҮГИЙН УЛС</text><text class="sm" x="140" y="730" text-anchor="middle">Ил хаант улс · Хүлэгү</text></g>
+    </svg>
+    <aside class="notes">Мөнх хаан 1259 оны зун Сычуаньд, Дяоюй (Хэчуань) цайзыг бүслэх үеэр нас барсан. Их хаан ширээг залгамжлах тогтсон дүрэм байгаагүй тул угсааны ноёд хуралдайгаар шийддэг байв. 1260 оны тавдугаар сард Хубилай өөрийн бааз Кайпинд (хожмын Шанду) хуралдай хуралдуулж хаан өргөмжлөгдсөн бол дүү Аригбөх Монголын төв нутагт, Хархорум орчим тусдаа хуралдайгаар хаан болсон. Ийнхүү нэг дор хоёр их хаан гарсан. Үүний зэрэгцээ Зүчийн, Цагаадайн, Хүлэгүгийн улсууд бие даасан бодлого явуулах болж, эзэнт гүрэн бодитоор хэд хэдэн хаант улсад хуваагдав. Анхаар: «хуваагдал» гэдэг нь харилцаа тасарсан гэсэн үг биш. Угсааны холбоо, худалдаа, элчийн харилцаа үргэлжилсээр байв.</aside>
+  </section>
+
+  <!-- 04 KUBLAI -->
+  <section class="slide" id="s04" data-title="Хубилай">
+    <svg class="sil" viewBox="0 0 980 1000" aria-label="Хубилайн уран сайхны бүдүүвч дүрс">
+      <defs>
+        <linearGradient id="silg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1b1d20"/><stop offset=".6" stop-color="#121417"/><stop offset="1" stop-color="#0c0d0f"/></linearGradient>
+        <radialGradient id="silhalo" cx=".5" cy=".38" r=".5"><stop offset="0" stop-color="#b23a2e" stop-opacity=".22"/><stop offset="1" stop-color="#b23a2e" stop-opacity="0"/></radialGradient>
+      </defs>
+      <circle cx="490" cy="380" r="420" fill="url(#silhalo)"/>
+      <g id="silBody">
+        <path d="M90,1000 C110,820 250,740 380,710 L430,640 L550,640 L600,710 C730,740 870,820 890,1000 Z" fill="url(#silg)" stroke="#d0563f" stroke-opacity=".55" stroke-width="2"/>
+        <path d="M380,710 C430,800 470,840 490,1000 M600,710 C550,800 510,840 490,1000" fill="none" stroke="#b7ad9a" stroke-opacity=".25" stroke-width="2"/>
+        <ellipse cx="490" cy="500" rx="118" ry="150" fill="url(#silg)" stroke="#d0563f" stroke-opacity=".6" stroke-width="2"/>
+        <path d="M352,382 C360,282 420,236 490,236 C560,236 620,282 628,382 Z" fill="#141619" stroke="#d0563f" stroke-opacity=".7" stroke-width="2"/>
+        <path d="M300,392 C380,360 600,360 680,392 C640,418 340,418 300,392 Z" fill="#191b1f" stroke="#ece4d3" stroke-opacity=".35" stroke-width="1.5"/>
+        <circle cx="490" cy="230" r="9" fill="#b59a62"/>
+        <path d="M430,600 C460,640 520,640 550,600 C540,660 520,700 490,712 C460,700 440,660 430,600 Z" fill="#101114" stroke="#b7ad9a" stroke-opacity=".25"/>
+      </g>
+    </svg>
+    <div class="abs eyebrow" style="left:124px;top:230px">Тулуйн хүү · Чингис хааны ач</div>
+    <h2 class="abs display name split">ХУБИЛАЙ</h2>
+    <div class="abs alt">Сэцэн хаан · <span class="zh">忽必烈</span> · Юань Шицзу <span class="zh">世祖</span> · 1215–1294</div>
+    <div class="abs facts">
+      <div class="fact"><div class="y">1260</div><div class="l">Кайпины хуралдайгаар их хаан өргөмжлөгдөв</div></div>
+      <div class="fact"><div class="y">1271</div><div class="l">«Их Юань» улсын нэрийг зарлав</div></div>
+      <div class="fact"><div class="y">1279</div><div class="l">Өмнөд Сүнийг эзэлж дуусгав</div></div>
+    </div>
+    <div class="abs mn mnname">ᠬᠤᠪᠢᠯᠠᠢ</div>
+    <p class="abs cap silcap">Дүрс нь уран сайхны бүдүүвч, түүхэн хөрөг биш. Хубилайн жинхэнэ хөрөг: «Юань хаадын хөрөгний цомог» (元代帝后像冊), Тайпэйн Үндэсний ордны музей.</p>
+    <aside class="notes">Хубилай 1215 онд Тулуй, Сорхагтани бэхи нарын хүү болж төрсөн. Ээж Сорхагтани хөвгүүддээ Хятад, Уйгур, Перс зөвлөхүүдийг ойртуулж, суурин иргэншлийг захирах туршлага олгосон гэж судлаачид (Rossabi 1988) тэмдэглэдэг. 1251 оноос Мөнх хаан түүнд Хойд Хятадын хэргийг даалгасан бөгөөд Хубилай Лю Бинжун зэрэг хятад зөвлөхүүдтэй болж, 1256 онд Кайпин хотыг байгуулсан. Монгол сурвалж бичгүүдэд түүнийг «Сэцэн хаан» гэдэг. Хятадын түүх бичлэгт сүмийн нэр нь Шицзу (世祖). Энэ слайдаар намтар ярих бус, «тал нутгийн хаан, Хятадын эзэн хаан хоёрыг нэг дор хослуулсан хүн» гэсэн дүр төрхийг тодруулна.</aside>
+  </section>
+
+  <!-- 05 1260-1264 -->
+  <section class="slide" id="s05" data-title="1260–1264">
+    <div class="abs eyebrow" style="left:120px;top:100px">Тулуйн угсааны дотоод дайн</div>
+    <h2 class="abs h2" style="top:150px">1260–1264</h2>
+    <div class="abs h2" style="left:120px;top:250px;font-size:56px;color:var(--parch-2);width:700px;line-height:1.1">Хубилай <span class="red">×</span> Аригбөх</div>
+    <div class="abs chiprow hit" id="s05chips">
+      <button class="chip" data-k="0">1260</button>
+      <button class="chip" data-k="1">1261</button>
+      <button class="chip" data-k="2">1262</button>
+      <button class="chip" data-k="3">1264</button>
+    </div>
+    <div class="abs panel">
+      <div class="yr" id="s05yr">1260</div>
+      <p class="body tx" id="s05tx"></p>
+    </div>
+    <div class="abs leg cap">
+      <div><span class="sw" style="background:#b23a2e"></span>Хубилайн нөлөөний бүс (Хойд Хятад)</div>
+      <div><span class="sw" style="background:#4c5257;outline:1px solid #b7ad9a"></span>Аригбөхийн бүс (Монголын төв нутаг)</div>
+      <div>Бүдүүвч · ойролцоо</div>
+    </div>
+    <aside class="notes">Энэ дайны гол хүчин зүйл бол хангамж. Хархорум хот Хойд Хятадаас ирэх үр тариа, барааны урсгалаас хамааралтай байсан тул Хубилай энэ урсгалыг хаахад Аригбөхийн байр суурь суларсан (Rossabi 1988). 1261 онд Хубилай давуу байдал олсон (АНУ-ын Конгрессын номын сангийн Mongolia: A Country Study). 1262 онд Цагаадайн улсын Алгу Аригбөхөөс урвасан нь түүний баруун талын нөөцийг тасалсан. Мөн 1262 онд Шаньдунд Ли Таны бослого гарч, Хубилай дарсан. Энэ нь Хубилай хятад нутгаа хянах шаардлагатай байсныг харуулдаг. 1264 онд Аригбөх бууж өгсөн. Гэхдээ Зүчийн болон Цагаадайн угсааны зарим хаад Хубилайг жинхэнэ их хаан гэж тэр бүр хүлээн зөвшөөрөөгүй, хожим Хайду Хубилайн эсрэг удаан тэмцсэн. Тиймээс энэ ялалт эзэнт гүрнийг дахин нэгтгээгүй.</aside>
+  </section>
+
+  <!-- 06 1271 -->
+  <section class="slide" id="s06" data-title="1271">
+    <div class="abs display big split" id="s06big">1271</div>
+    <div class="abs morph" aria-live="polite">
+      <span id="s06a">ИХ МОНГОЛ УЛС</span>
+      <span id="s06b" class="red">ИХ ЮАНЬ</span>
+    </div>
+    <div class="abs zhbox">
+      <div class="zh-big">大元</div>
+      <div class="quote">大哉乾元</div>
+      <p class="body">«Өөрчлөлтийн ном» (易經)-ий «Тэнгэрийн анхдагч эх агуу юутай» гэсэн хэллэгээс. Өмнөх гүрнүүд нутаг, удмын нэрээр нэрлэгддэг байсан бол энэ нэр хийсвэр утгатай.</p>
+      <p class="cap" style="margin-top:14px">Монгол бичээсүүдэд хослуулсан хэлбэр: <b>Дай Өн Их Монгол Улс</b>.</p>
+    </div>
+    <div class="abs when">
+      <div class="debate">⚖ Юань хэзээ эхэлсэн бэ? Эх сурвалжууд өөр он авдаг</div>
+      <div class="row">
+        <div><div class="y">1260</div><p class="cap">Хубилай хаан ширээнд. Торонтогийн их сургуулийн номын сангийн ангилал «1260–1368»</p></div>
+        <div><div class="y gold">1271</div><p class="cap">Улсын нэрийг зарласан. Ихэнх орчин үеийн судалгаа энэ оныг авдаг</p></div>
+        <div><div class="y">1279</div><p class="cap">Сүнийг бүрэн эзэлсэн. АНУ-ын Конгрессын номын сангийн Mongolia: A Country Study «1279–1368»</p></div>
+      </div>
+    </div>
+    <aside class="notes">1271 онд (Жиюань наймдугаар он) Хубилай «Их Юань» гэсэн улсын нэрийг зарлиг гарган тунхагласан. Нэр нь Жоугийн үеийн сонгодог «Өөрчлөлтийн ном»-ын Цянь зурлагын тайлбар дахь 大哉乾元 хэллэгээс гаралтай. Чэнь Шяовэй (Chen Xiaowei, Journal of Chinese Humanities, 2023) тэмдэглэснээр 1271 оноос өмнө хятад албан бичигт 大蒙古國 буюу «Их Монгол Улс» гэж бичдэг байсан бөгөөд «Жиншы дадянь»-д Шицзу улсын нэрийг «Их Монгол Улс»-аас «Их Юань» болгон шууд өөрчилсөн гэжээ. Монгол хэлний бичээсүүдэд «Дай Өн Их Монгол Улс» хэмээн хоёр нэрийг хослуулсан хэлбэр гардаг. Энэ нь хоёр өөр улс биш, нэг төрийн хятад, монгол нэр байсныг харуулна. Яагаад хятад нэр авсан бэ? Хятад иргэдийн дунд хууль ёсны эрх мэдлээ батлах, хятад гүрнүүдийн залгамж уламжлалд байр сууриа тодорхойлох зорилготой байсан гэж үздэг. Гэхдээ Хубилай Монгол хаан, Чингисийн угсааны их хаан гэсэн байр сууриа орхиогүй. Доод мөрөнд оны маргааныг харуулав: 1260, 1271, 1279 гэсэн гурван он хоёулаа эх сурвалжид хэрэглэгддэг.</aside>
+  </section>
+
+  <!-- 07 1279 -->
+  <section class="slide" id="s07" data-title="1279">
+    <div class="abs eyebrow" style="left:120px;top:100px">Өмнөд Сүнийг эзэлсэн нь</div>
+    <h2 class="abs h2">Хятадын нутгийг дахин нэг төрд нэгтгэв</h2>
+    <div class="abs steps" id="s07steps">
+      <div class="step"><div class="y">1268–1273</div><div class="t">Шянъян, Фаньчэнийг 5 жил бүслэв. Ил хаант улсаас ирсэн мастеруудын жин чулуу шидэгч шийдвэрлэх үүрэгтэй байв.</div></div>
+      <div class="step"><div class="y">1276</div><div class="t">Баян жанжны цэрэг Янзыг уруудаж, Сүний нийслэл Ханжоу (Линьань) бууж өгөв.</div></div>
+      <div class="step"><div class="y">1279</div><div class="t">Ямэний тэнгисийн тулалдаан. Сүний сүүлчийн хаан хүү далайд живж, Сүн улс мөхөв.</div></div>
+    </div>
+    <div class="abs display end split" id="s07end">1279</div>
+    <p class="abs cap mapsrc">Бүдүүвч: Өмнөд Сүний нутаг ~1260 (саарал), довтолгооны чиглэл (улаан). Хил ойролцоо.</p>
+    <aside class="notes">Өмнөд Сүн бол Монголчуудын тулгарсан хамгийн хүчирхэг суурин улс байсан: олон хүн ам, баян эдийн засаг, том гол мөрөн, усан цэрэгтэй. Тиймээс Монголчууд хятад, солонгос усан онгоцны мастеруудыг ашиглан өөрийн усан цэргийг байгуулсан. Шянъян ба Фаньчэнийг 1268–1273 онд бүслэх үед Ил хаант улсаас ирсэн Исмаил, Ала ад-Дин нарын жин чулуу шидэгч (回回砲) хотын хэрмийг нурааж чадсан (Rossabi 1988). Үүний дараа Баян жанжин 1275–1276 онд Янз мөрнийг уруудаж, 1276 онд нийслэл Ханжоуг бууж өгөхөд хүргэв. Сүний үлдэгдэл хүчнүүд өмнө зүг рүү зугтаж, 1279 оны гуравдугаар сард Гуандунгийн Ямэнд болсон тэнгисийн тулалдаанд ялагдав. Ач холбогдол: Тан гүрэн задарснаас хойш (907) хуваагдмал байсан хятад нутгийг нэг төрийн дор оруулсан нь энэ анх удаа байв. Үүнийг Монголын эзэнт гүрний тэлэлтийн сүүлчийн том ялалтуудын нэг гэж үзэж болно.</aside>
+  </section>
+
+  <!-- 08 EMPIRE -->
+  <section class="slide" id="s08" data-title="Эзэнт гүрэн">
+    <div class="abs eyebrow" style="left:120px;top:100px">XIII зууны сүүл</div>
+    <h2 class="abs h2">Их Юань улсын <i>газар нутаг</i></h2>
+    <div class="abs stats">
+      <div class="stat"><div class="n">≈ <span class="cnt" data-to="11">0</span> сая км²</div><p class="cap l">1310 оны орчим, ойролцоо тооцоо. Хил тодорхойгүй бүсүүд олон.</p></div>
+      <div class="stat"><div class="n"><span class="cnt" data-to="58.8" data-dec="1">0</span> сая</div><p class="cap l">1290 оны албан бүртгэлийн хүн ам. Бодит тоо илүү байсан гэж үздэг (~75 сая).</p></div>
+    </div>
+    <div class="abs leg cap">
+      <div><span class="sw" style="background:#b23a2e"></span>Юань улсын шууд захиргаа (Лэнбэй муж = Монголын нутаг орно)</div>
+      <div><span class="sw" style="background:repeating-linear-gradient(45deg,#d0563f 0 2px,transparent 2px 6px)"></span>Төвд: Сюаньжэн юань-аар захирсан (⚖ эрх зүйн хэлбэр маргаантай)</div>
+      <div><span class="sw" style="background:repeating-linear-gradient(-45deg,#b7ad9a 0 2px,transparent 2px 6px)"></span>Гоорё: хүргэн, вассал улс</div>
+      <div><span class="sw" style="background:#3a3f44"></span>Бусад Монгол хаант улсууд</div>
+    </div>
+    <div class="tip" id="s08tip"><div class="t"></div><p class="body" style="font-size:19px;margin-top:6px"></p></div>
+    <p class="abs cap" style="right:120px;bottom:86px;width:640px;text-align:right">Хотын тэмдэг дээр хулганаа аваачна уу. Бүдүүвч зураг; хил ойролцоо. Эрэг: Natural Earth.</p>
+    <aside class="notes">Газрын зургийн хил бүр ойролцоо бөгөөд ялангуяа гурван бүс маргаантай. Нэгдүгээрт, Монголын нутаг: Юань улс Хархорумыг төв болгосон Лэнбэй мужийг (1307 онд Хэлин нэрээр байгуулж, 1312 онд Лэнбэй болгосон) захирсан тул Монголын төв нутаг Юанийн бүрэлдэхүүнд байсан. Хоёрдугаарт, Төвд: Юань улс бурхны шашин, Төвдийн хэргийг Сюаньжэн юань-аар (宣政院) дамжуулан, Сакьягийн шашны удирдагчидтай хамтран захирсан. Энэ харилцааг орчин үеийн «бүрэн эрхт байдлын» маргаанд янз бүрээр тайлбарладаг тул тусгай зураасаар ялгав. Гуравдугаарт, Гоорё (Солонгос) ван нар Юанийн гүнжтэй гэрлэж, хүргэн улс болсон. Мөн Жэндун муж нэрээр Юанийн захиргааны тогтолцоонд хэсэгчлэн оров. Хүн амын тоо: 1290 оны бүртгэлээр 13.2 сая өрх, 58.8 сая хүн. Бүртгэл бодит тооноос бага гардаг тул слайд дээр «албан бүртгэл» гэж тодотгосон. 11 сая км² гэдэг нь бас тооцоо.</aside>
+  </section>
+
+  <!-- 09 DADU -->
+  <section class="slide" id="s09" data-title="Дайду">
+    <div class="abs h2w">
+      <div class="eyebrow">Их Юань улсын нийслэл · <span class="zh">大都</span></div>
+      <div class="display split" id="s09t">ДАЙДУ</div>
+      <p class="lead sub dim" style="font-size:30px">Хаанбалгас — хааны хот. Өнөөгийн Бээжингийн суурь.</p>
+    </div>
+    <div class="abs nums">
+      <div class="num"><div class="n"><span class="cnt" data-to="1267">0</span></div><p class="cap">барьж эхэлсэн он; 1272 онд «Дайду» нэрийг өгөв</p></div>
+      <div class="num"><div class="n"><span class="cnt" data-to="11">0</span> хаалга</div><p class="cap">хойд талдаа 2, бусад талдаа 3</p></div>
+      <div class="num"><div class="n">≈ <span class="cnt" data-to="28.6" data-dec="1">0</span> км</div><p class="cap">хэрмийн нийт урт (археологийн хэмжилт)</p></div>
+    </div>
+    <svg class="plan" viewBox="0 0 900 940" aria-label="Дайду хотын төлөвлөлтийн бүдүүвч">
+      <g class="pl-streets">
+        <line class="street" x1="100" y1="250" x2="800" y2="250"/><line class="street" x1="100" y1="470" x2="800" y2="470"/><line class="street" x1="100" y1="690" x2="300" y2="690"/><line class="street" x1="560" y1="690" x2="800" y2="690"/>
+        <line class="street" x1="320" y1="80" x2="320" y2="560"/><line class="street" x1="580" y1="80" x2="580" y2="860"/><line class="street" x1="330" y1="560" x2="330" y2="860"/>
+        <line class="street" x1="100" y1="360" x2="800" y2="360"/><line class="street" x1="210" y1="80" x2="210" y2="860"/><line class="street" x1="690" y1="80" x2="690" y2="860"/>
+      </g>
+      <rect class="wall pl-wall" x="100" y="80" width="700" height="780"/>
+      <path class="water pl-haizi" d="M262,440 C250,400 300,388 350,396 C400,404 444,420 440,470 C436,520 380,548 330,552 C280,556 270,500 262,440 Z"/>
+      <rect class="imp pl-imp" x="300" y="560" width="270" height="295"/>
+      <path class="water pl-taiye" d="M338,590 C330,640 340,700 350,760 C356,800 380,820 388,800 C394,760 386,700 384,640 C382,600 352,580 338,590 Z"/>
+      <rect class="pal pl-pal" x="408" y="640" width="88" height="160"/>
+      <line class="axis pl-axis" x1="452" y1="80" x2="452" y2="900"/>
+      <rect x="440" y="408" width="24" height="24" fill="#b59a62" class="pl-ctr"/>
+      <g class="pl-gates">
+        <rect class="gate" x="312" y="74" width="16" height="12"/><rect class="gate" x="572" y="74" width="16" height="12"/>
+        <rect class="gate" x="322" y="854" width="16" height="12"/><rect class="gate" x="444" y="854" width="16" height="12"/><rect class="gate" x="572" y="854" width="16" height="12"/>
+        <rect class="gate" x="94" y="244" width="12" height="16"/><rect class="gate" x="94" y="464" width="12" height="16"/><rect class="gate" x="94" y="684" width="12" height="16"/>
+        <rect class="gate" x="794" y="244" width="12" height="16"/><rect class="gate" x="794" y="464" width="12" height="16"/><rect class="gate" x="794" y="684" width="12" height="16"/>
+      </g>
+      <g class="pl-labels">
+        <text class="lbl" x="506" y="728">Ордон 宮城</text>
+        <text class="lbl" x="580" y="600" text-anchor="start">Эзэн хааны хот 皇城</text>
+        <text class="lbl" x="226" y="584">Тайе нуур</text>
+        <text class="lbl" x="350" y="358" text-anchor="middle">Жишуйтань</text>
+        <text x="350" y="380" text-anchor="middle">УСАН ЗАМЫН БООМТ</text>
+        <text x="476" y="425">ТӨВ ЦЭГ</text>
+        <text x="462" y="140">ТӨВ ТЭНХЛЭГ</text>
+        <text x="100" y="910">0</text><line x1="100" y1="895" x2="800" y2="895" stroke="#7b766c"/><text x="800" y="910" text-anchor="end">≈ 6.6 КМ</text>
+        <text x="100" y="56">БҮДҮҮВЧ · ХОЙД ↑</text>
+      </g>
+    </svg>
+    <p class="abs cap who">Төлөвлөгч: Лю Бинжун (劉秉忠). Барилгын ажилд Лалын уран барилгач Эхтиярддин (亦黑迭兒丁) оролцов. Шанду (上都) — зуны нийслэл, ЮНЕСКО-гийн дэлхийн өв.</p>
+    <aside class="notes">Хубилай 1260-аад онд Зүрчидийн хуучин нийслэл Жундугийн зүүн хойд талд шинэ нийслэл барихаар шийдэж, 1267 онд ажлыг эхлүүлсэн. 1272 онд «Дайду» (大都, Их нийслэл) нэрийг өгсөн. Монгол, Түрэг хэлээр «Хаанбалгас» (Марко Пологийн «Камбалук») гэж нэрлэдэг байв. Хотыг «Жоугийн ёслол»-ын хотын төлөвлөлтийн сонгодог зарчмаар, тэгш өнцөгт сүлжээ, төв тэнхлэгтэй төлөвлөсөн. Нөгөө талаар Монгол ордонд гэр, ан агнуурын цэцэрлэг, том нуур (Тайе нуур)-ыг хотын дотор оруулсан нь Монголын онцлог байв. 1293 онд Тунхуй суваг ашиглалтад орж, Их сувгаар ирсэн усан онгоцууд хотын доторх Жишуйтань хүртэл ирэх болсон. Хэмжээ: хэрмийн урт 28.6 км орчим гэж археологийн хэмжилт гарсан. Бүдүүвчийн харьцаа ойролцоо. Мин улс 1368 онд хотыг эзлээд хойд хэрмийг урагш шилжүүлж, «Бэйпин» гэж нэрлэсэн бөгөөд хожим Бээжин болсон. Шанду буюу Кайпин нь 1256 онд байгуулагдсан зуны нийслэл бөгөөд 2012 онд ЮНЕСКО-гийн дэлхийн өвд бүртгэгдсэн.</aside>
+  </section>
+
+  <!-- 10 GOVERNMENT -->
+  <section class="slide" id="s10" data-title="Засаглал">
+    <div class="abs eyebrow" style="left:120px;top:70px">Хосолсон төр</div>
+    <h2 class="abs h2">Эзэнт гүрнийг хэрхэн захирсан бэ</h2>
+    <p class="abs lead">Монголын хааны институц ба Хятадын хүнд сурталт яамд нэг бүтцэд хосолсон.</p>
+    <svg class="org" id="org" viewBox="0 0 1680 600" aria-label="Юань улсын засаглалын бүдүүвч">
+      <g class="links">
+        <path class="link" d="M840,86 V130 H190 V170 M840,130 H623 V170 M840,130 H1056 V170 M840,130 H1490 V170"/>
+        <path class="link" d="M190,280 V315 M190,315 H1056 V350 M190,315 V350"/>
+        <path class="link" d="M813,460 V500 M1056,460 V480 H1450 V500"/>
+        <path class="link" d="M660,43 H600 M1020,43 H1080" stroke-dasharray="4 5"/>
+      </g>
+      <g class="grp mg"><rect class="box" x="660" y="0" width="360" height="86"/><text class="t1" x="840" y="56" text-anchor="middle">ХААН</text></g>
+      <g class="grp mg"><rect class="box" x="1080" y="0" width="420" height="86"/><text class="t2" x="1100" y="36">Хишиг <tspan class="zh" dx="8">怯薛</tspan></text><text class="t3" x="1100" y="66">хааны бие хамгаалах, ордны алба</text></g>
+      <g class="grp mg"><rect class="box" x="180" y="0" width="420" height="86"/><text class="t2" x="200" y="36">Жаргуч <tspan class="zh" dx="8">札魯忽赤</tspan></text><text class="t3" x="200" y="66">Монгол шүүгч, Их шүүхийн газар</text></g>
+      <g class="grp zh"><rect class="box" x="0" y="170" width="380" height="110"/><text class="zh" x="20" y="206">中書省</text><text class="t2" x="20" y="238">Жуншү шэн</text><text class="t3" x="20" y="264">Төв захиргаа, иргэний хэрэг</text></g>
+      <g class="grp zh"><rect class="box" x="433" y="170" width="380" height="110"/><text class="zh" x="453" y="206">樞密院</text><text class="t2" x="453" y="238">Шумиюань</text><text class="t3" x="453" y="264">Цэргийн хэрэг</text></g>
+      <g class="grp zh"><rect class="box" x="866" y="170" width="380" height="110"/><text class="zh" x="886" y="206">御史臺</text><text class="t2" x="886" y="238">Юйшитай</text><text class="t3" x="886" y="264">Хяналт, шалгалт</text></g>
+      <g class="grp mg zh"><rect class="box" x="1300" y="170" width="380" height="110"/><text class="zh" x="1320" y="206">宣政院</text><text class="t2" x="1320" y="238">Сюаньжэн юань</text><text class="t3" x="1320" y="264">Бурхны шашин, Төвдийн хэрэг</text></g>
+      <g class="grp zh"><rect class="box" x="0" y="350" width="380" height="110"/><text class="zh" x="20" y="386">腹里</text><text class="t2" x="20" y="418">Фули</text><text class="t3" x="20" y="444">нийслэлийн бүс, Жуншү шэн шууд</text></g>
+      <g class="grp zh"><rect class="box" x="433" y="350" width="1247" height="110"/><text class="zh" x="453" y="386">行中書省</text><text class="t2" x="453" y="418">10 салбар яам (муж)</text><text class="t3" x="453" y="444">Лэнбэй · Ляоян · Хэнань · Шэньси · Сычуань · Ганьсу · Юньнань · Жэжян · Жянси · Хугуан</text></g>
+      <g class="grp zh"><rect class="box" x="433" y="500" width="760" height="100"/><text class="zh" x="453" y="536">路 · 府 · 州 · 縣</text><text class="t2" x="453" y="570">Лү → фу / жоу → шянь</text><text class="t3" x="760" y="570">орон нутгийн захиргаа</text></g>
+      <g class="grp mg"><rect class="box" x="1220" y="500" width="460" height="100"/><text class="zh" x="1240" y="536">達魯花赤</text><text class="t2" x="1240" y="570">Даргач — шат бүрт</text></g>
+    </svg>
+    <div class="abs chiprow hit" id="s10chips">
+      <button class="chip on" data-h="">Бүгд</button>
+      <button class="chip" data-h="mg">Монгол уламжлал</button>
+      <button class="chip" data-h="zh">Хятад институц</button>
+    </div>
+    <p class="abs cap side">Шалгалтын тогтолцоог 1313 оны зарлигаар сэргээж, анхны шалгалт 1315 онд болсон. Өртөө (1500 гаруй), пайз, хувь нутаг нь Монголын уламжлалт институцууд.</p>
+    <aside class="notes">Юанийн төрийн бүтэц хоёр давхар уламжлалтай. Хятадын Тан, Сүн, Зүрчидийн Алтан улсаас өвлөсөн институц: Жуншү шэн (иргэний захиргаа), Шумиюань (цэрэг), Юйшитай (хяналт). Монголын уламжлалт институц: хишиг (怯薛, хааны бие хамгаалах, ордны алба, ирээдүйн түшмэдийн сургууль), жаргуч (札魯忽赤, шүүгч), даргач (達魯花赤, шат бүрийн захиргааны дээр томилогдох, ихэвчлэн Монгол, сэму хүн), хувь нутаг (投下, ноёдын өмчлөл), өртөө, пайз. Шинэ институц: Сюаньжэн юань (бурхны шашин, Төвд). Мужийн түвшинд Жуншү шэний салбар буюу «行中書省» (синшэн) байгуулсан нь өнөөгийн Хятадын «муж» (省) захиргааны тогтолцооны эх сурвалж юм. Хуулийн хувьд Тан, Сүний хуулийн бичгийг шууд хэрэглэлгүй, зарлиг ба шийдвэрийн эмхэтгэлүүд (жишээ нь 1323 оны «Дай Юань тунжи», «Юань диан жан») дээр тулгуурласан. Өртөө: Т. Эрдэнэхишигийн (2026) судалгаагаар 1500 гаруй өртөө, 30 км орчим тутам, 300 мянга гаруй өртөөний өрх байжээ. Шалгалт: 1313 онд сэргээх зарлиг гарч, 1315 онд анхны шалгалт болсон. Гэхдээ шалгалт түшмэл болох цорын ганц зам болоогүй.</aside>
+  </section>
+
+  <!-- 11 SOCIETY -->
+  <section class="slide" id="s11" data-title="Олон үндэстэн">
+    <div class="abs eyebrow" style="left:120px;top:80px">Нийгэм</div>
+    <h2 class="abs h2">Олон үндэстний <i>эзэнт гүрэн</i></h2>
+    <p class="abs lead">Хүн амыг гарал, хэзээ дагаар орсноор нь дөрвөн бүлэгт ангилж, албан тушаал, шалгалт, ял шийтгэлд ялгаатай хандаж байв.</p>
+    <div class="abs bands" id="s11bands">
+      <div class="band" style="top:0"><div class="bar"></div><div class="nm">Монгол<span class="zh">蒙古人</span></div><div class="ds">Монгол аймгууд. Цэрэг, төрийн дээд албанд давуу эрхтэй.</div></div>
+      <div class="band" style="top:180px"><div class="bar"></div><div class="nm">Сэму<span class="zh">色目人</span></div><div class="ds">«Олон зүйлийн хүмүүс»: уйгур, тангуд, Төв Азийн мусульман, хивчаг, ас (алан) зэрэг. Санхүү, захиргаанд өргөн ажиллав.</div></div>
+      <div class="band" style="top:360px"><div class="bar"></div><div class="nm">Хань<span class="zh">漢人</span></div><div class="ds">Хойд Хятадын оршин суугчид: хятад, хятан, зүрчид, мөн солонгос.</div></div>
+      <div class="band" style="top:540px"><div class="bar"></div><div class="nm">Нань<span class="zh">南人</span></div><div class="ds">Хамгийн сүүлд (1276–1279) дагаар орсон Өмнөд Сүний харьяат.</div></div>
+    </div>
+    <div class="abs chiprow hit" id="s11chips">
+      <button class="chip on" data-v="0">Уламжлалт тайлбар</button>
+      <button class="chip" data-v="1">⚖ Шинэ судалгаа</button>
+    </div>
+    <p class="abs body verdict" id="s11v" style="font-size:22px"></p>
+    <aside class="notes">Уламжлалт тайлбараар (жишээ нь Колумбын их сургуулийн Asia for Educators) Юанийн нийгэм Монгол, сэму, хань, нань гэсэн дөрвөн шатлалтай байжээ. Энэ ангилал практикт нөлөөтэй байсан: жишээлбэл, 1315 оноос хойшхи шалгалтад 300 цолыг дөрвөн бүлэгт тэнцүү (тус бүр 75) хуваарилдаг байсан нь хүн амын хувьд маш тэгш бус байв. Даргачийн албыг голдуу Монгол, сэму хүмүүс эрхэлдэг байв. Гэхдээ шинэ судалгаа энэ ойлголтыг шүүмжилдэг. Хирошимагийн их сургуулийн профессор Фунада Ёшиюки (2014) «сэму» гэсэн нэр томьёо зөвхөн хятад эх сурвалжид гардаг, монгол, перс эх сурвалжид байхгүй гэдгийг харуулж, энэ нь хятад түшмэдийн бий болгосон захиргааны ангилал, Монголын засаглалын хуулиар тогтоосон «дөрвөн зэрэг» биш байж болно гэж дүгнэсэн. Үүний дараа Японы ахлах сургуулийн сурах бичгийг засварласан байна. Оюутнуудтай ярилцах асуулт: «Ялгаварлал байсан уу» гэхээс илүүтэй «хэн, ямар эх сурвалжид, ямар зорилгоор энэ ангиллыг бичсэн бэ?» гэж асуух хэрэгтэй.</aside>
+  </section>
+
+  <!-- 12 MONEY -->
+  <section class="slide" id="s12" data-title="Мөнгө ба худалдаа">
+    <svg class="note" viewBox="0 0 470 760" aria-label="Жиюань цаасан мөнгөний бүдүүвч сэргээлт">
+      <defs><pattern id="brd" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#d8cdb6"/><path d="M0,8 Q4,0 8,8 T16,8" fill="none" stroke="#2a2620" stroke-width="1.4"/></pattern></defs>
+      <rect class="frame nt-frame" x="0" y="0" width="470" height="760"/>
+      <rect x="14" y="14" width="442" height="732" fill="url(#brd)" class="nt-brd"/>
+      <rect x="34" y="34" width="402" height="692" class="ink nt-in" style="fill:#d8cdb6"/>
+      <text x="235" y="96" text-anchor="middle" font-size="44" class="nt-t">至元通行寶鈔</text>
+      <line x1="54" y1="120" x2="416" y2="120" class="ink nt-l"/>
+      <rect x="70" y="140" width="330" height="290" class="ink nt-box"/>
+      <text x="235" y="214" text-anchor="middle" font-size="62" class="nt-v">貳貫</text>
+      <g class="nt-coins" fill="none" stroke="#2a2620" stroke-width="1.6">
+        <g id="coinrow"></g>
+      </g>
+      <text x="56" y="300" font-size="22" writing-mode="tb" class="nt-s1">諸路通行</text>
+      <text x="414" y="300" font-size="22" writing-mode="tb" class="nt-s1">諸路通行</text>
+      <g class="nt-lines"><rect x="70" y="460" width="330" height="7" class="inkf"/><rect x="70" y="486" width="300" height="7" class="inkf"/><rect x="70" y="512" width="320" height="7" class="inkf"/><rect x="70" y="538" width="260" height="7" class="inkf"/><rect x="70" y="564" width="310" height="7" class="inkf"/><rect x="70" y="590" width="200" height="7" class="inkf"/></g>
+      <rect x="170" y="500" width="92" height="92" class="seal nt-seal"/>
+      <rect x="300" y="620" width="74" height="74" class="seal nt-seal"/>
+    </svg>
+    <p class="abs cap notecap">Жиюань тунсин баочао (1287), «хоёр гуань». <b>Бүдүүвч сэргээлт</b>, жинхэнэ дээжүүд дэлхийн музейн цуглуулгад хадгалагддаг.</p>
+    <div class="abs flow">
+      <div class="eyebrow">Эдийн засаг</div>
+      <h2 class="h2" style="margin-top:14px">Цаасан мөнгөөр холбогдсон эзэнт гүрэн</h2>
+      <div class="chain" id="s12chain">
+        <div class="link-i"><div class="k">01</div><div class="t">Татвар</div><p class="d">Өмнөд нутагт газрын татвар, хойд нутагт өрхийн татвар. Давсны монополь хамгийн том орлогын эх үүсвэр.</p></div>
+        <div class="link-i"><div class="k">02</div><div class="t">Мөнгө</div><p class="d">1260 Жунтун, 1287 Жиюань, 1350-иад онд Жичжэн мөнгө. Цаасан мөнгийг цорын ганц хууль ёсны төлбөрийн хэрэгсэл болгов.</p></div>
+        <div class="link-i"><div class="k">03</div><div class="t">Худалдаа</div><p class="d">Ортог: хааны угсааны хөрөнгөөр арилжаа хийдэг худалдаачдын холбоо. Чюаньжоу дахь далайн гаалийн газар.</p></div>
+        <div class="link-i"><div class="k">04</div><div class="t">Торгоны зам</div><p class="d">Хуурай болон далайн зам эзэнт гүрний мөнгөний ертөнцийг Ойрхи Дорнод, Энэтхэгийн далайтай холбов.</p></div>
+      </div>
+    </div>
+    <div class="abs regimes">
+      <div class="tag">Мөнгөний горим · Guan, Palma, Wu (2024)</div>
+      <div class="reg-bar" id="s12reg">
+        <div style="width:14.3%;background:#b59a62">Мөнгөн баталгаа</div>
+        <div style="width:31.2%;background:#a9a294">Нэрлэсэн баталгаа</div>
+        <div style="width:54.5%;background:#b23a2e;color:#ece4d3">Баталгаагүй (fiat)</div>
+      </div>
+      <div class="reg-axis mono cap"><span style="left:0">1260</span><span style="left:14.3%">1276</span><span style="left:45.5%">1310</span><span style="left:100%">1368</span></div>
+    </div>
+    <div class="abs infl"><div class="n"><span class="cnt" data-to="12.7" data-dec="1">0</span>%</div><p class="cap">жилийн дундаж инфляц, 1346–1355</p></div>
+    <aside class="notes">Юань улс цаасан мөнгийг эзэнт гүрний хэмжээнд үндсэн мөнгө болгосон анхны төр юм. Сүн, Зүрчидийн Алтан улс цаасан мөнгө хэрэглэж байсан ч Юань үүнийг улс даяар нэгтгэсэн. 1260 онд Жунтун мөнгө гаргаж, мөнгөн (silver) нөөцөөр баталгаажуулсан. Гуань, Пальма, Ү нарын (CEPR, 2024) судалгаагаар мөнгөний горим гурван үетэй: 1260–1275 онд бүрэн мөнгөн баталгаатай, 1276–1309 онд нэрлэсэн баталгаатай, 1310–1368 онд баталгаагүй (fiat). 1290–1330-аад онд үнэ харьцангуй тогтвортой байсан бол 1346–1355 онд жилийн дундаж инфляц 12.7% хүрсэн. Иргэний дайн мөнгө хэт их хэвлэхэд хүргэж, 1368 он гэхэд цаасан мөнгө бараг үнэ цэнэгүй болсон. Ортог (斡脫) бол Монгол ноёдын хөрөнгийг зээлж худалдаа хийдэг, ихэвчлэн Төв Азийн мусульман худалдаачдын холбоо байв. Марко Поло цаасан мөнгийг гайхширсан байдлаар тэмдэглэсэн байдаг. Жичжэн мөнгөний он эх сурвалжид 1350 эсвэл 1352 гэж зөрүүтэй гардаг.</aside>
+  </section>
+
+  <!-- 13 SILK ROAD -->
+  <section class="slide" id="s13" data-title="Торгоны зам">
+    <div class="abs eyebrow" style="left:120px;top:70px">Хуурай ба далайн зам</div>
+    <h2 class="abs h2">Торгоны зам</h2>
+    <p class="abs body pax">Хаант улсууд хоорондоо дайтаж байсан ч хуурай болон далайн зам Евразийг урьд байгаагүй хэмжээнд холбов. Судлаачид үүнийг «Монголын энх» (Pax Mongolica) гэдэг ч энэ нэр томьёо маргаантай.</p>
+    <div class="abs key cap">
+      <div><span class="sw" style="background:#b59a62;height:3px;vertical-align:4px"></span>Хуурай зам</div>
+      <div><span class="sw" style="background:#7f97a6;height:3px;vertical-align:4px"></span>Далайн зам</div>
+      <div>Бүдүүвч · гол чиглэл</div>
+    </div>
+    <div class="abs flows" id="s13flows">
+      <div class="fl"><div class="k">Бараа</div><p class="d">торго, шаазан, халуун ногоо, морь, эм</p></div>
+      <div class="fl"><div class="k">Хүн</div><p class="d">элч, худалдаачин, лам, гар урчууд</p></div>
+      <div class="fl"><div class="k">Санаа</div><p class="d">газарзүй, түүх бичлэг, одон орон</p></div>
+      <div class="fl"><div class="k">Технологи</div><p class="d">цаасан мөнгө, хэвлэл, анагаах ухааны мэдлэг</p></div>
+      <div class="fl"><div class="k">Шашин</div><p class="d">Ислам, Дорнын Христ, бурхны шашин</p></div>
+    </div>
+    <aside class="notes">Хуурай замын гол чиглэл: Дайду – Шанду – Хархорум эсвэл Ганьсугийн хонгилоор Дуньхуан, Турфан – Алмалык – Самарканд – Тебриз – Константинополь буюу Хар тэнгисийн боомтуудаар Венец, Генуя. Далайн зам: Чюаньжоу (Зайтун) – Гуанжоу – Чампа – Малакын хоолой – Энэтхэгийн Малабар эрэг (Каликут, Куилон) – Хормуз. Энэ сүлжээг өртөө, пайз, ортогийн худалдаачид, Юань ба Ил хаант улсын хоорондын элчийн харилцаа дэмжсэн. «Монголын энх» гэсэн нэр томьёог зарим судлаачид шүүмжилдэг: учир нь Хайду, Цагаадайн хаад, Алтан Орд, Ил хаант улсын хооронд байнгын дайн байсан бөгөөд замууд үе үе хаагддаг байв. Технологийн шилжилтийн тухайд (дарь, хэвлэл, луужин) «шууд хэн хэнд дамжуулсан» гэдэг нь маргаантай тул «мэдлэг тархах нөхцөл бүрдсэн» гэж болгоомжтой хэлэх нь зөв.</aside>
+  </section>
+
+  <!-- 14 CULTURE -->
+  <section class="slide" id="s14" data-title="Соёл ба мэдлэг">
+    <div class="abs eyebrow" style="left:120px;top:70px">Шашин · шинжлэх ухаан · урлаг</div>
+    <h2 class="abs h2">Мэдлэгийн <i>сүлжээ</i></h2>
+    <p class="abs body sub">Шашны хүлцэл нь улс төрийн бодлого байв: лам, имам, тахилч, даоистууд хааны төлөө ерөөл өргөж, татвараас чөлөөлөгддөг байв. Зангилаа дээр дарж дэлгэрэнгүйг үзнэ үү.</p>
+    <svg class="net" id="s14net" viewBox="0 0 1920 1080" aria-label="Соёл, мэдлэгийн солилцооны сүлжээ"></svg>
+    <div class="abs detail" id="s14detail"><div class="tag" id="s14k">Сонгоно уу</div><div class="t" id="s14t">Төвдийн бурхны шашин</div><p class="body" id="s14d"></p></div>
+    <aside class="notes">Хубилай 1260 онд Сакьягийн Пагва ламыг гуоши (улсын багш), 1270 онд дишы (хааны багш) болгосон. Пагва лам Төвд үсэг дээр үндэслэн дөрвөлжин бичгийг зохиож, 1269 онд албан ёсны бичиг болгосон. Энэ нь Монгол–Төвдийн шашин-улс төрийн «өглөгийн эзэн ба тахилын газар» гэсэн харилцааны эхлэл гэж үздэг. Даоизм: 1258 онд Хубилайн дэргэд буддын шашинтан, даоистуудын мэтгэлцээн болж, 1281 онд «Дао дэ жин»-ээс бусад даоист судрыг шатаах зарлиг гарсан. Ислам: Жамал ад-Дин 1267 онд Персийн одон орны багажуудыг авчирч, 1271 онд Лалын одон орон судлалын газар байгуулагдсан. Гуо Шоужин 1281 онд «Шоуши хуанли»-г боловсруулсан. Христ: Дорнын сүм (несториан) Монгол, онгуд нарын дунд өргөн дэлгэрсэн, 1289 онд Христийн хэргийг хариуцсан Чунфу сы байгуулагдсан. Францисканы лам Жованни да Монтекорвино 1307 онд Хаанбалгасын хамба болсон. Анагаах: Лалын эмийн газрууд, Ху Сыхуэйн 1330 оны «Иньшань жэнъяо». Урлаг: Жао Мэнфу, «Юанийн дөрвөн мастер» (Хуан Гунван, Ү Жэнь, Ни Зань, Ван Мэн), Жиндэжэнийн цэнхэр-цагаан шаазан (Персийн кобальтаар), Гуань Ханьчины зажү жүжиг. Шашны хүлцлийг «орчин үеийн шашны эрх чөлөө» гэж ойлгож болохгүй: энэ нь шашнуудыг төрд үйлчлүүлэх прагматик бодлого байсан.</aside>
+  </section>
+
+  <!-- 15 CONNECTED WORLD -->
+  <section class="slide" id="s15" data-title="Холбогдсон ертөнц">
+    <div class="abs eyebrow" style="left:120px;top:70px">Дипломат харилцаа ба дайн</div>
+    <h2 class="abs h2">Дайдугаас <i>ертөнц рүү</i></h2>
+    <div class="abs list" id="s15list">
+      <div class="it" data-a="kaesong"><div class="k">Гоорё</div><div class="d"><b>Хүргэн улс.</b> Гоорёгийн ван нар Юанийн гүнжтэй гэрлэв.</div></div>
+      <div class="it" data-a="hakata"><div class="k">Япон</div><div class="d"><b>1274, 1281</b> — хоёр аян бүтэлгүйтэв.</div></div>
+      <div class="it" data-a="thanglong"><div class="k">Дай Вьет</div><div class="d"><b>1258, 1285, 1288</b> — аянууд. 1288 онд Бач Данг голд ялагдав.</div></div>
+      <div class="it" data-a="pagan"><div class="k">Бирм, Чампа</div><div class="d"><b>1277–1287</b> — Паган руу, 1280-аад онд Чампа руу аян.</div></div>
+      <div class="it" data-a="java"><div class="k">Ява</div><div class="d"><b>1292–1293</b> — тэнгисийн аян, буцаж хөөгдөв.</div></div>
+      <div class="it" data-a="tabriz"><div class="k">Ил хаант улс</div><div class="d"><b>Болд чинсан, Рашид ад-Дин</b> — мэдлэгийн солилцоо.</div></div>
+      <div class="it" data-a="venice"><div class="k">Европ</div><div class="d"><b>Марко Поло</b> (~1275–1291) ⚖ · <b>Раббан Саума</b> Ром, Парист (1287–1288).</div></div>
+    </div>
+    <aside class="notes">Юань улсын гадаад харилцаа хоёр хэлбэртэй: дайн ба гэрлэлт, элчийн харилцаа. Гоорё: 1259 онд дагаар орсны дараа ван нар Юанийн гүнжтэй гэрлэж, хүргэн улс болсон, Японыг дайлах аянд хөлөг онгоц, цэрэг гаргасан. Япон: 1274 (Бунъэй), 1281 (Коан) оны аянууд шуурга, Японы хамгаалалт, хангамжийн бэрхшээлээс болж бүтэлгүйтсэн. Дай Вьет: 1258, 1285, 1288 онд гурван удаа довтолсон ч Чан Хынг Дао 1288 онд Бач Данг голд ялсан. Гэвч Дай Вьет хожим алба барьж харилцаагаа сэргээсэн. Бирм: 1287 онд Паган руу аян хийсэн. Ява: 1292–1293 оны аян эхэндээ амжилттай боловч холбоотон нь эргэж урвасан (Mongolia: A Country Study). Ил хаант улс: Болд чинсан Хубилайн ордноос Ил хаант улсад очиж, Рашид ад-Дины «Судрын чуулган»-д Хятад, Монголын тухай мэдээ өгсөн (Allsen 2001). Европ: Марко Поло 1271 онд Венецээс гарч, 1275 орчим Хятадад ирж, 1291 онд буцсан гэж өөрийн номдоо бичсэн. Зарим судлаач түүний Хятадад очсон эсэхэд эргэлздэг ч ихэнх судлаачид түүний тэмдэглэлийг ерөнхийдөө үнэмшилтэй гэж үздэг. Раббан Саума бол Дайдугаас гарсан Дорнын сүмийн лам бөгөөд 1287–1288 онд Ил хааны элчээр Ром, Парист очсон.</aside>
+  </section>
+
+  <!-- 16 CRISIS -->
+  <section class="slide" id="s16" data-title="Хямрал">
+    <div class="abs eyebrow" style="left:120px;top:70px">XIV зуун</div>
+    <h2 class="abs h2">Тэлэлтээс <i>задрал руу</i></h2>
+    <div class="abs fac" id="s16fac">
+      <div class="f"><div class="i">I</div><div><div class="t">Хаан ширээний тэмцэл</div><p class="d">1307–1333: 26 жилд 8 хаан. Ордны бүлэглэл, хаан алагдах явдал гарав.</p></div></div>
+      <div class="f"><div class="i">II</div><div><div class="t">Мөнгөний уналт</div><p class="d">1310 оноос баталгаагүй цаасан мөнгө, 1346–1355 онд жилд ~12.7% инфляц.</p></div></div>
+      <div class="f"><div class="i">III</div><div><div class="t">Байгалийн гамшиг</div><p class="d">1344 онд Шар мөрөн үерлэж, голдрилоо өөрчлөв. Ган, өлсгөлөн, тахал.</p></div></div>
+      <div class="f"><div class="i">IV</div><div><div class="t">Бослого</div><p class="d">1351 онд далан засах ажилд олон мянган хүн дайчилсны дараа Улаан алчууртны (紅巾) бослого гарав.</p></div></div>
+    </div>
+    <div class="abs ticks"><svg viewBox="0 0 760 70" id="s16ticks" aria-label="1307–1333 оны хаадын солигдол"></svg></div>
+    <aside class="notes">Хубилайн ач Төмөр Өлзийт хаан 1307 онд нас барсны дараа хаан ширээний залгамжлал маш тогтворгүй болсон. 1307–1333 онд найман хаан: Хайсан (Хүлэг), Аюурбарибад (Буянт), Шидэбал (Гэгээн, 1323 онд алагдсан), Есөнтөмөр, Рагибаг, Түвтөмөр (Заяат), Хусалэ (Хутагт), Ринчинбал. 1328 оны «Хоёр нийслэлийн дайн»-аар Шанду, Дайдугийн бүлэглэлүүд зэвсэглэн тулалдсан. Эдийн засаг: мөнгөний баталгаа алдагдаж, инфляц өссөн. Байгаль: 1344 онд Шар мөрөн далангаа эвдэж, голдрилоо өөрчилсөн нь Хэнань, Шаньдунд их хохирол учруулсан. 1351 онд Тогтох чинсан далан засах томоохон ажилд 150 мянга орчим ажилчин, 20 мянга орчим цэрэг дайчилсан гэж Кембрижийн Хятадын түүхэнд бичсэн. Тэр жил Хань Шаньтун, Лю Футун нарын удирдсан Улаан алчууртны бослого гарсан. Энэ бослогын шашны үзэл суртал нь Майдар бурхан, Гэрлийн хаан ирэх тухай ёс заншилтай холбоотой байв. Ингээд дөрвөн хүчин зүйл бие биеийг нөхцөлдүүлсэн.</aside>
+  </section>
+
+  <!-- 17 TOGHON TEMUR -->
+  <section class="slide" id="s17" data-title="Тогоонтөмөр">
+    <div class="abs eyebrow" style="left:124px;top:110px">Юань улсын сүүлчийн хаан</div>
+    <h2 class="abs display name split">ТОГООНТӨМӨР</h2>
+    <div class="abs alt">Ухаант хаан · Юань Шүньди <span class="zh">順帝</span> · 1320–1370 · хаан ширээнд 1333–1370</div>
+    <svg class="line" id="s17line" viewBox="0 0 1680 380" aria-label="Тогоонтөмөрийн засаглалын он дараалал"></svg>
+    <p class="abs lead quote dim" style="font-size:28px">37 жил хаан ширээнд суусан нь Юанийн хамгийн урт засаглал байв. Энэ хугацаанд төв засаг аажмаар хяналтаа алдав.</p>
+    <aside class="notes">Тогоонтөмөр 1333 онд 13 настайдаа хаан ширээнд суусан. Эхэн үед төрийг Баян чинсан удирдаж, 1340 онд Тогтох (Тогтоа) түүнийг унагаасан. Тогтох шинэчлэл хийж, Сүн, Ляо, Алтан улсын түүхийг бичүүлж, Шар мөрний далан засах ажлыг удирдсан. 1354 онд Гаоюй хотыг бүслэх үед ордны бүлэглэл Тогтохыг огцруулсан нь эргэлтийн цэг болсон: Юанийн цэрэг бослогыг дарах боломжоо алдсан. Үүний дараа өмнөд нутаг Жу Юаньжан, Чэнь Юляан, Жан Шичэн зэрэг бүлэглэлүүдийн хооронд хуваагдсан. Жу Юаньжан 1356 онд Нанжинг эзэлж, 1363 онд Поян нуурын тулалдаанд Чэнь Юляаныг ялсан. Хойд нутагт Юанийн жанжид (Хөх-Төмөр зэрэг) хоорондоо тэмцэлдэж байв. Монгол сурвалж бичгүүдэд Тогоонтөмөрийг «Ухаант хаан» гэдэг бөгөөд Дайдугаа алдсандаа гашуудсан тухай «Тогоонтөмөр хааны гашуудал» хэмээх шүлэг хожмын сурвалжид үлдсэн байдаг. Хятадын уламжлалт түүх бичлэгт түүнийг сул дорой хаан гэж дүрсэлдэг ч энэ нь Мин улсын үзэл бодлыг тусгасан гэдгийг анхаараарай.</aside>
+  </section>
+
+  <!-- 18 1368 -->
+  <section class="slide" id="s18" data-title="1368">
+    <div class="abs eyebrow">Хятад дахь засаглалын төгсгөл</div>
+    <div class="abs display big split" id="s18big">1368</div>
+    <div class="abs duo"><div class="a">Мин улс <span class="dim">өмнөөс өснө</span></div><div class="a red">Ордон <span class="dim">хойш ухарна</span></div></div>
+    <div class="abs steps" id="s18steps">
+      <div class="step"><div class="y">1368 · I</div><div class="t">Жу Юаньжан Нанжинд Мин улсыг тунхаглав.</div></div>
+      <div class="step"><div class="y">1368 · IX</div><div class="t">Сюй Дагийн цэрэг Дайдуд орох үед Тогоонтөмөр Шанду руу ухрав.</div></div>
+      <div class="step"><div class="y">1369–1370</div><div class="t">Ордон Инчан руу шилжиж, Тогоонтөмөр 1370 онд тэнд таалал төгсөв.</div></div>
+    </div>
+    <p class="abs cap" style="left:120px;bottom:86px;width:900px">Бүдүүвч. Юньнань (1381–82 он хүртэл) ба Ляодун (1387 он хүртэл) Монголын эзэмшилд үлдсэн.</p>
+    <aside class="notes">1368 оны нэгдүгээр сард Жу Юаньжан Нанжинд (Интянь) Мин улсыг тунхаглаж, Хунъу он тоолол хэрэглэв. Тэр жилийн намар Сюй Да тэргүүтэй Мингийн цэрэг хойш довтолж, есдүгээр сарын 14-нд Дайдуд орсон. Тогоонтөмөр хаан хэдхэн хоногийн өмнө ордныхоо хамт хот орхиж Шанду руу ухарсан. 1369 онд Мингийн цэрэг Шандуг эзэлсэн тул ордон Инчан руу шилжиж, Тогоонтөмөр 1370 онд тэнд нас барсан. Анхаарах зүйл: Юань улсын бүх нутаг 1368 онд нэг дор алдагдаагүй. Юньнань Юанийн ван Басалваармийн гарт 1381–1382 он хүртэл, Ляодун Нахачугийн мэдэлд 1387 он хүртэл байсан. Хамгийн чухал нь Монголын хаад өөрсдийгөө «Дай Юань»-ы хаад гэж үзсээр байсан.</aside>
+  </section>
+
+  <!-- 19 NORTHERN YUAN -->
+  <section class="slide" id="s19" data-title="Умард Юань">
+    <div class="abs h2w">
+      <div class="eyebrow">Умард Юань · <span class="zh">北元</span></div>
+      <div class="display" id="s19t">1368 <span class="red">≠</span> төгсгөл</div>
+    </div>
+    <p class="abs lead">Хаан ширээ, Чингисийн угсаа, улсын нэр, тамга Монгол нутагт үргэлжилсэн. Монголын хаад Мингийн эсрэг 1372 онд ялалт байгуулж байв.</p>
+    <svg class="tl" id="s19tl" viewBox="0 0 1680 300" aria-label="Умард Юанийн он дараалал 1368–1635"></svg>
+    <div class="abs term">
+      <div><div class="debate">⚖ Нэр томьёо</div><p class="body" style="margin-top:8px;font-size:21px">Мингийн эх сурвалж «Бэй Юань» гэж ихэвчлэн 1368–1388 оныг нэрлэдэг. Монголын түүх бичлэгт 1368–1635 оныг Умард Юань гэж нэрлэх нь бий.</p></div>
+      <div><div class="debate">Залгамж чанар</div><p class="body" style="margin-top:8px;font-size:21px">«Даян хаан» цолыг «Дай Юань» гэсэн үгнээс гаралтай гэж олон судлаач үздэг. 1635 онд Юанийн тамга Манжид шилжив.</p></div>
+    </div>
+    <aside class="notes">Тогоонтөмөрийн хүү Аюширидар (Билигт хаан, 1370–1378) Хархорумыг төв болгож, Юанийн хаан ширээг үргэлжлүүлсэн. МУИС-ийн Д. Ундрахын судалгаанд 1372 онд Мингийн хойд аяныг Монголчууд няцаасныг Мингийн эсрэг анхны томоохон эсэргүүцэл гэж үзсэн. 1388 онд Буйр нуурын орчим Мингийн жанжин Лань Юй Төгстөмөр хааныг ялснаар Хубилайн угсааны хаадын хүч эрс суларсан. Үүний дараа Ойрад, Монгол хооронд тэмцэл өрнөж, 1449 онд Ойрадын Эсэн тайш Түмүгийн тулалдаанд Мингийн хааныг олзолсон. XV зууны сүүлээр Даян хаан Монголыг дахин нэгтгэсэн (түүний засаглалын оныг эх сурвалжууд өөр өөрөөр өгдөг). 1578 онд Алтан хаан Сөнамжамцтай уулзаж, «Далай лам» цолыг өгсөн. Лигдэн хаан 1634 онд нас барж, 1635 онд түүний хүү Эжэй Манжийн Хунтайжид дагаар орж Юанийн тамгыг тушаасан бөгөөд 1636 онд Хунтайж Чин улсыг тунхагласан. Тиймээс «Монголын төр 1368 онд мөхсөн» гэх нь буруу. Хятад дахь засаглал дууссан ч Монголын төрт ёс, угсаа, нэр хойд нутагтаа үргэлжилсэн. Гэхдээ «Умард Юань»-ыг орчин үеийн Монгол Улстай шууд адилтгах нь бас болгоомжтой хандах асуудал.</aside>
+  </section>
+
+  <!-- 20 LEGACY -->
+  <section class="slide" id="s20" data-title="Өв">
+    <div class="abs q"><div class="eyebrow">Өв</div><h2 class="h2" style="margin-top:16px">Их Юань юуг өөрчилсөн бэ?</h2></div>
+    <div class="words" id="s20words">
+      <div class="wd" style="left:330px;top:380px"><div class="k">Евразийн холбоо</div><p class="d">хуурай ба далайн нэг сүлжээ</p></div>
+      <div class="wd" style="left:960px;top:330px"><div class="k">Бээжин</div><p class="d">Дайду өнөөдрийг хүртэл нийслэлийн суурь</p></div>
+      <div class="wd" style="left:1590px;top:380px"><div class="k">Муж</div><p class="d">行省 → өнөөгийн 省 тогтолцоо</p></div>
+      <div class="wd" style="left:330px;top:800px"><div class="k">Монгол–Төвд</div><p class="d">шашин, улс төрийн урт харилцаа</p></div>
+      <div class="wd" style="left:960px;top:850px"><div class="k">Цаасан мөнгө</div><p class="d">эзэнт гүрний хэмжээний туршлага</p></div>
+      <div class="wd" style="left:1590px;top:800px"><div class="k">Мэдлэг</div><p class="d">Перс, Хятад, Төвдийн солилцоо</p></div>
+    </div>
+    <div class="abs final" id="s20final">
+      <div class="display">Их Юань улс бол Монголын эзэнт гүрний дорнын төв байв. 1368 онд Хятад дахь засаглал нь дууссан ч Монголын төрт ёс хойд нутагтаа үргэлжилсэн.</div>
+      <p class="cap">Эх сурвалж, ном зүй — S товч</p>
+    </div>
+    <aside class="notes">Хичээлийн дүгнэлт: 1) Евразийн холбоо — Монголын эзэнт гүрний сүлжээний нэг төв болох Юань улс Иран, Төв Ази, Европтой элч, худалдаа, мэдлэгээр холбогдсон. 2) Бээжин — Дайду нь Мин, Чин, өнөөгийн Хятадын нийслэлийн суурь болсон. 3) Муж — салбар яамны тогтолцоо өнөөгийн Хятадын мужийн захиргааны эх сурвалж. 4) Монгол–Төвд — Хубилай, Пагва ламын харилцаа XVI зууны Алтан хаан, Далай ламын харилцаагаар дахин сэргэсэн. 5) Цаасан мөнгө — эзэнт гүрний хэмжээнд цаасан мөнгө хэрэглэсэн туршлага ба түүний уналтын сургамж. 6) Мэдлэг — Персийн одон орон, анагаах, хятадын газарзүй, Рашид ад-Дины түүх бичлэг. Маргааны тухай: Хятадын уламжлалт түүх бичлэг Юанийг хятадын гүрнүүдийн залгамжид оруулдаг. Орчин үеийн олон судлаач Юанийг Их Монгол Улсын нэг хэсэг, Монголын эзэнт гүрний дорнын төв гэж тодотгодог. Энэ үеийн хүмүүст орчин үеийн «үндэстэн-улс»-ын ойлголтыг наах нь буруу тул хоёр талыг нь хамт харах нь зүйтэй. Ярилцах асуулт: «Юань улс хэний түүх вэ?» Хариулт: Монгол, Хятад, Төвд, Солонгос, Иран, Төв Азийн ард түмний хамтын түүх.</aside>
+  </section>
+
+  <div id="hud" aria-hidden="true">
+    <div class="brand">Их Юань гүрэн · ШУТИС</div>
+    <div id="ruler"><div class="base"></div><div class="done"></div><div class="mk"></div><div class="mky"></div></div>
+    <div class="count"><b id="cur">01</b> / <span id="tot">20</span></div>
+  </div>
+  <button class="navzone l" aria-label="Өмнөх слайд"></button>
+  <button class="navzone r" aria-label="Дараагийн слайд"></button>
+</div>
+</div>
+
+<div id="help">
+  <button id="bNotes" title="Тэмдэглэл (N)">Тэмдэглэл</button>
+  <button id="bSrc" title="Эх сурвалж (S)">Эх сурвалж</button>
+  <button id="bMotion" title="Хөдөлгөөн багасгах (M)">Хөдөлгөөн</button>
+  <button id="bFull" title="Бүтэн дэлгэц (F)">⛶</button>
+</div>
+
+<div id="rot">Хэвтээ байрлалд үзнэ үү ↻</div>
+
+<aside id="notes" hidden><button class="x" id="xNotes">Хаах · N</button><div class="nh" id="notesH">Илтгэгчийн тэмдэглэл</div><div id="notesB"></div></aside>
+
+<div id="sources" hidden role="dialog" aria-label="Эх сурвалж">
+  <button class="x" id="xSrc">Хаах · S</button>
+  <h3>Эх сурвалж ба ном зүй</h3>
+  <p class="cap">✓ — энэ ажлын явцад онлайнаар нээж тулгасан. ◐ — суурь бүтээл, номын сангаас тулгах шаардлагатай.</p>
+  <h4>Монгол судалгаа</h4>
+  <ol>
+    <li>✓ Т. Эрдэнэхишиг. «Юань улсын өртөөний тогтолцоо, үйл ажиллагаа». <i>Аюулгүй байдал, батлан хамгаалах судлал</i> №43, 2026. <a href="https://mids.gov.mn/wp-content/uploads/2026/04/Erdenekhishig.T-2026-01.pdf" target="_blank" rel="noopener">mids.gov.mn</a></li>
+    <li>✓ Д. Ундрах (МУИС). «XIV–XVI зууны үеийн Монгол-Мингийн хооронд болсон дайн тулааны тухай». <a href="https://journal.num.edu.mn/jir/article/download/2669/2354/6030" target="_blank" rel="noopener">journal.num.edu.mn</a></li>
+    <li>◐ Монгол Улсын түүх. II боть. ШУА Түүхийн хүрээлэн, 2003.</li>
+  </ol>
+  <h4>Олон улсын судалгаа</h4>
+  <ol>
+    <li>✓ Chen Xiaowei. "On the Issue of Determining the Founding Year of the 'Great Mongol Nation'." <i>Journal of Chinese Humanities</i> 9 (2023): 61–76.</li>
+    <li>✓ Funada Yoshiyuki, Hiroshima University. "New Evidence Overturning the Four-Class System Theory of the Yuan Dynasty" (үндсэн өгүүлэл 2014). <a href="https://www.hiroshima-u.ac.jp/node/54098" target="_blank" rel="noopener">hiroshima-u.ac.jp</a></li>
+    <li>✓ Guan H., Palma N., Wu M. "The rise and fall of paper money in Yuan China, 1260–1368." CEPR VoxEU, 2024. <a href="https://cepr.org/voxeu/columns/rise-and-fall-paper-money-yuan-china-1260-1368" target="_blank" rel="noopener">cepr.org</a></li>
+    <li>✓ Columbia University, Asia for Educators. "The Mongols in China." <a href="http://afe.easia.columbia.edu/mongols/china/china.htm" target="_blank" rel="noopener">afe.easia.columbia.edu</a></li>
+    <li>✓ U.S. Library of Congress. <i>Mongolia: A Country Study</i>, "Khubilai Khan and the Yuan Dynasty." <a href="https://countrystudies.us/mongolia/18.htm" target="_blank" rel="noopener">countrystudies.us</a></li>
+    <li>◐ Rossabi, M. <i>Khubilai Khan: His Life and Times</i>. University of California Press, 1988.</li>
+    <li>◐ Franke, H., Twitchett, D. (eds.). <i>The Cambridge History of China</i>, Vol. 6. Cambridge UP, 1994.</li>
+    <li>◐ Atwood, C. P. <i>Encyclopedia of Mongolia and the Mongol Empire</i>. Facts on File, 2004.</li>
+    <li>◐ Allsen, T. T. <i>Culture and Conquest in Mongol Eurasia</i>. Cambridge UP, 2001.</li>
+    <li>◐ Brook, T. <i>The Troubled Empire: China in the Yuan and Ming Dynasties</i>. Harvard UP, 2010.</li>
+    <li>◐ Taagepera, R. "Expansion and Contraction Patterns of Large Polities." <i>International Studies Quarterly</i> 41 (1997).</li>
+  </ol>
+  <h4>Газрын зураг ба дүрслэл</h4>
+  <ol>
+    <li>Эргийн шугам: Natural Earth 1:50m (нийтийн өмч). Хил хязгаарыг зохиогч ойролцоолж зурсан бүдүүвч.</li>
+    <li>Хубилайн дүрс, цаасан мөнгө, Дайдугийн төлөвлөлт нь бүдүүвч сэргээлт, түүхэн нотолгоо биш. Хиймэл оюунаар үүсгэсэн «түүхэн» зураг ашиглаагүй.</li>
+    <li>Wikipedia-г зөвхөн огноо тулгах хэрэгсэл болгон ашигласан.</li>
+  </ol>
+</div>
+
+<script src="lib/gsap.min.js"></script>
+<script src="data/map.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
