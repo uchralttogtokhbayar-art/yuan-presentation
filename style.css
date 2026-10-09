@@ -391,3 +391,8 @@ body {
 /* reduced motion */
 .rm #grain { display: none; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+/* lite mode: phones and tablets — fewer GPU layers, no blur */
+.split .ch { will-change: auto; }
+.lite #grain { display: none; }
+.lite .slide, .lite .slide * { filter: none !important; }

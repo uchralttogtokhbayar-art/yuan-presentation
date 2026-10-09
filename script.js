@@ -19,6 +19,8 @@
   /* ---------- motion preference ---------- */
   let reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   try { const v = localStorage.getItem('yuan-rm'); if (v !== null) reduced = v === '1'; } catch (e) {}
+  const lite = (window.matchMedia && matchMedia('(pointer: coarse)').matches) || Math.min(screen.width, screen.height) < 820;
+  if (lite) document.documentElement.classList.add('lite');
   const setReducedClass = () => {
     document.documentElement.classList.toggle('rm', reduced);
     $('#bMotion').classList.toggle('on', reduced);
@@ -29,6 +31,7 @@
   const deck = $('#deck');
   function fit() {
     const s = Math.min(innerWidth / W, innerHeight / H);
+    if (lite) { deck.style.position = 'relative'; deck.style.left = deck.style.top = 'auto'; deck.style.transform = 'none'; deck.style.zoom = s; return; }
     deck.style.position = 'absolute';
     deck.style.left = '50%'; deck.style.top = '50%';
     deck.style.transform = `translate(-50%,-50%) scale(${s})`;
@@ -38,7 +41,7 @@
   /* ---------- build the map ---------- */
   const world = $('#world');
   const gGrat = $('#gGrat'), gTerr = $('#gTerr'), gRiv = $('#gRiv'), gRoutes = $('#gRoutes'), gFx = $('#gFx'), gCities = $('#gCities');
-  $('#land').setAttribute('d', M.land);
+  $('#land').setAttribute('d', lite ? M.land.replace(/L[^LMZ]*L([^LMZ]*)/g, 'L$1').replace(/L[^LMZ]*L([^LMZ]*)/g, 'L$1') : M.land);
   {
     let d = '';
     for (let lon = -10; lon <= 160; lon += 10) { const a = P(lon, 75), b = P(lon, -15); d += `M${a[0]},${a[1]}V${b[1]}`; }
