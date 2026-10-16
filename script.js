@@ -939,6 +939,32 @@
     }
   };
 
+  S.slaw = {
+    year: 1323, cam: { cx: C.dadu.x, cy: C.dadu.y, w: 90 }, veil: .93,
+    map: { terr: { yuan: .3 } },
+    enter(tl, el) {
+      up(tl, [$('.eyebrow', el), $('.h2', el)], .1);
+      up(tl, $('.lead', el), .5);
+      tl.fromTo($('.lw-line', el), { scaleX: 0, transformOrigin: '0 50%' }, { scaleX: 1, duration: 2.4, ease: 'power2.inOut' }, .8);
+      tl.fromTo($$('.lw-card', el), { opacity: 0, x: 120, rotate: 2 }, { opacity: 1, x: 0, rotate: 0, duration: .9, stagger: .22, ease: 'power3.out' }, .9);
+      up(tl, $$('.lw-layer', el), 2.8, { st: .2 });
+      up(tl, $('.lw-107', el), 3.4, { y: 16 });
+      count(tl, $('.lw-107 .cnt', el), 3.5, 1.8);
+    }
+  };
+  S.sart = {
+    year: 1342, cam: { cx: C.dadu.x - 30, cy: C.dadu.y + 20, w: 300 }, veil: .9,
+    map: {},
+    enter(tl, el) {
+      up(tl, [$('.eyebrow', el), $('.h2', el)], .1);
+      const pl = $$('.ar-plate', el);
+      tl.fromTo(pl, { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 1, stagger: .18, ease: 'power3.out' }, .5);
+      pl.forEach((p, i) => $$('.ink', p).forEach((path, j) => drawOn(tl, path, .9 + i * .25 + j * .12, 1.4)));
+      tl.fromTo($$('.blue, .mnt', el), { opacity: 0 }, { opacity: 1, duration: 1, stagger: .1 }, 2.6);
+      up(tl, $('.ar-cap', el), 3.6, { y: 8 });
+    }
+  };
+
   /* ---------- navigation ---------- */
   const slides = $$('.slide');
   const total = slides.length;

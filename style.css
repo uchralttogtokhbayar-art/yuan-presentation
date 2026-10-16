@@ -396,3 +396,31 @@ body {
 .split .ch { will-change: auto; }
 .lite #grain { display: none; }
 .lite .slide, .lite .slide * { filter: none !important; }
+
+/* ---------- law ---------- */
+#slaw .lw-row { left: 120px; top: 390px; width: 1680px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
+#slaw .lw-line { position: absolute; left: 0; right: 0; top: -14px; height: 1px; background: var(--gold); opacity: .7; }
+#slaw .lw-card { position: relative; padding: 22px 20px 20px; background: rgba(20,23,26,.9); border-top: 2px solid var(--parch-2); transition: transform .3s, border-color .3s; }
+#slaw .lw-card.mg { border-top-color: var(--red-hi); }
+#slaw .lw-card:hover { transform: translateY(-6px); border-top-color: var(--gold); }
+#slaw .lw-card .y { font-family: var(--f-display); font-size: 46px; line-height: 1; }
+#slaw .lw-card .t { font-size: 22px; font-weight: 500; margin-top: 12px; line-height: 1.25; }
+#slaw .lw-card .zh { font-size: 20px; color: var(--parch-2); margin-top: 6px; }
+#slaw .lw-card .d { font-size: 17px; line-height: 1.45; color: var(--parch-2); margin: 10px 0 0; }
+#slaw .lw-layers { left: 120px; top: 760px; width: 1680px; display: grid; grid-template-columns: 1fr 1fr 1fr 1.25fr; gap: 40px; }
+#slaw .lw-layer .k { font-family: var(--f-mono); font-size: 16px; letter-spacing: .18em; text-transform: uppercase; }
+#slaw .lw-layer .d { font-size: 19px; line-height: 1.45; color: var(--parch-2); margin: 10px 0 0; }
+#slaw .lw-107 { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; }
+#slaw .lw-107 .n { font-family: var(--f-display); font-size: 110px; line-height: .85; color: var(--gold); font-variant-numeric: lining-nums; }
+
+/* ---------- culture ---------- */
+#sart .ar-row { left: 120px; top: 290px; width: 1680px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 40px; }
+#sart .ar-plate svg { width: 100%; height: 260px; display: block; overflow: visible; }
+#sart .ar-plate .ink { fill: none; stroke: var(--parch); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+#sart .ar-plate .blue { fill: none; stroke: #6f95c8; stroke-width: 2.4; stroke-linecap: round; }
+#sart .ar-plate circle.blue { fill: rgba(111,149,200,.25); }
+#sart .ar-plate .mnt { font-family: var(--f-mn); font-size: 64px; fill: var(--red-hi); writing-mode: tb; }
+#sart .ar-plate .k { font-family: var(--f-display); font-size: 44px; line-height: 1; margin-top: 26px; padding-top: 18px; border-top: 1px solid #3a3833; }
+#sart .ar-plate .k .zh { font-size: 22px; color: var(--parch-2); margin-left: 8px; }
+#sart .ar-plate .d { font-size: 18px; line-height: 1.45; color: var(--parch-2); margin: 14px 0 0; }
+#sart .ar-cap { left: 120px; top: 950px; width: 1300px; }
