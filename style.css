@@ -424,3 +424,11 @@ body {
 #sart .ar-plate .k .zh { font-size: 22px; color: var(--parch-2); margin-left: 8px; }
 #sart .ar-plate .d { font-size: 18px; line-height: 1.45; color: var(--parch-2); margin: 14px 0 0; }
 #sart .ar-cap { left: 120px; top: 950px; width: 1300px; }
+
+/* ---------- images ---------- */
+#s04 .sil-img { position: absolute; right: 110px; top: 130px; height: 820px; width: auto; -webkit-mask-image: radial-gradient(ellipse 50% 54% at 50% 46%, #000 45%, transparent 100%); mask-image: radial-gradient(ellipse 50% 54% at 50% 46%, #000 45%, transparent 100%); }
+#s04 .name { font-size: 200px; }
+#s04 .mnname { right: 50px; top: 560px; }
+#s09 .ddmap { left: 900px; top: 140px; width: 900px; height: auto; opacity: 0; border: 1px solid #3a3833; }
+#s09chips { right: 120px; top: 940px; }
+#s09 .ddsrc { left: 900px; top: 948px; width: 500px; }

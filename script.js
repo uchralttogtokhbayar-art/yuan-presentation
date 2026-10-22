@@ -329,7 +329,7 @@
     map: { terr: { kublai: .5, ariq: .3 } },
     ambient: () => gsap.to(cam, { cx: '+=30', duration: 30, ease: 'none', onUpdate: applyCam }),
     enter(tl, el) {
-      tl.fromTo($('.sil', el), { opacity: 0, x: 80, filter: 'blur(20px)' }, { opacity: 1, x: 0, filter: 'blur(0px)', duration: 2.4, ease: 'power3.out' }, 0);
+      tl.fromTo($('.sil-img', el), { opacity: 0, x: 80, filter: 'blur(20px)' }, { opacity: 1, x: 0, filter: 'blur(0px)', duration: 2.4, ease: 'power3.out' }, 0);
       up(tl, $('.eyebrow', el), .4, { y: 10 });
       chars(tl, $('.name', el), .6, { y: 0, blur: 20, st: .08, d: 1.4, ease: 'power2.out' });
       up(tl, $('.alt', el), 1.5);
@@ -530,6 +530,10 @@
       const cn = $$('.cnt', el); cn[0].dataset.from = 1200;
       cn.forEach((c, i) => count(tl, c, 2 + i * .25, 1.6));
       up(tl, $('.who', el), 5.6, { y: 8 });
+      $$('#s09chips .chip').forEach(c => c.classList.toggle('on', c.dataset.v === 'map'));
+      tl.to($('.plan', el), { opacity: 0, duration: 1.2 }, 6.4);
+      tl.fromTo($('.ddmap', el), { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1, duration: 1.4, ease: 'power2.out' }, 6.4);
+      up(tl, [$('#s09chips', el), $('.ddsrc', el)], 7, { y: 8 });
     }
   };
 
@@ -964,6 +968,13 @@
       up(tl, $('.ar-cap', el), 3.6, { y: 8 });
     }
   };
+
+  $$('#s09chips .chip').forEach(b => b.addEventListener('click', () => {
+    $$('#s09chips .chip').forEach(c => c.classList.toggle('on', c === b));
+    const m = b.dataset.v === 'map';
+    gsap.to('#s09 .ddmap', { opacity: m ? 1 : 0, duration: reduced ? 0 : .6 });
+    gsap.to('#s09 .plan', { opacity: m ? 0 : 1, duration: reduced ? 0 : .6 });
+  }));
 
   /* ---------- navigation ---------- */
   const slides = $$('.slide');
